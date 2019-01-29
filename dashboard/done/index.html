@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Заголовок</title>
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- <link rel="shortcut icon" href="favicon.png" /> -->
+	<!-- <link rel="stylesheet" href="css/fonts.css" /> -->
+	<link rel="stylesheet" href="css/main.css" />
+	<!-- <link rel="stylesheet" href="css/media.css" /> -->
+	<link rel="stylesheet" href="mlibs/selectric.css" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700" rel="stylesheet">
+</head>
+<body>
+	<div class="h_header">
+		<div class="h_logo">
+			<img src="img/bitmap.png" alt="" class="h_proj_logo">
+			<img src="img/bitmap.png" alt="" class="h_proj_logo">
+		</div>
+		<div class="h_select_wrap">
+			<label class="h_select_arrow" for="h_project">
+				<select name="h_project" id="h_project" class="h_check_pro">
+					<option class="h_pro_option" value="none" selected>Select project</option>
+					<option class="h_pro_option" value="none">Startup Ventures</option>
+					<option class="h_pro_option" value="none">Grove</option>
+					<option class="h_pro_option" value="none">Serona</option>
+					<option class="h_pro_option" value="none">Balck Rock Benefit Group</option>
+					<option class="h_pro_option" value="none">Five Spark</option>
+					<option class="h_pro_option" value="none">Verold</option>
+				</select>
+			</label>
+		</div>
+		<nav class="h_head_nav">
+			<a href="" class="h_head_nav_item">ROAD MAP</a>
+			<a href="" class="h_head_nav_item">QUERY</a>
+		</nav>
+		<div class="research">
+			<div class="research_item">
+				<h2 class="research_item_title"></h2>
+			</div>
+		</div>
+		<button class="h_search"></button>
+		<div class="h_nortifications">
+			<span class="h_nortif_counter">6</span>
+		</div>
+		<div class="h_avatar_wrap">
+			<img src="img/avatar.jpg" alt="" class="h_avatarh">
+		</div>
+	</div><!--  END HEADER	 -->
+	<div class="wrap">
+		<div class="block1">
+			<div class="b1_lside">
+				<span class="b1_amount">
+					5
+				</span>
+				<span class="b1_proj">
+					Projects
+				</span>
+				<div class="b1_progress_wrap">
+					<div class="b1_percent">
+					85<span class="b1_per">% </span>
+					
+					</div>
+					<div class="b1_progress">
+						<div class="b1_progress_done"></div>
+					</div>
+					<span class="b1_text">
+					Project Active
+					</span>
+				</div>	
+			</div>
+			<div class="b1_rside">
+				<canvas id="bar-chart" width="950" height="222"></canvas>
+			</div>
+		</div>
+		<div class="block2">
+			<div class="b2_item1 b2_item">
+				<div class="b2_title">Total Ideas</div>
+				<span class="b2_icon"></span>
+				<div class="b2_number">347</div>
+				<div class="b2_chart">
+					
+				</div>
+				<span class="b2_period">-5 this week  </span>
+			</div>
+			<div class="b2_item2 b2_item">
+				<div class="b2_title">Total Experiment</div>
+				<span class="b2_icon"></span>
+				<div class="b2_number">120</div>
+				<div class="b2_chart">
+					
+				</div>
+				<span class="b2_period">+2 this week </span>
+			</div>
+			<div class="b2_item3 b2_item">
+				<div class="b2_title">Total Success Rate</div>
+				<span class="b2_icon"></span>
+				<div class="b2_number">87<span class="b2_percent">%</span></div>
+				<div class="b2_chart">
+					
+				</div>
+				<span class="b2_period">-9% this week</span>
+			</div>
+			<div class="b2_item4 b2_item">
+				<div class="b2_title">Total Test Spread</div>
+				<span class="b2_icon"></span>
+				<div class="b2_number">66<span class="b2_percent">%</span></div>
+				<div class="b2_chart">
+					
+				</div>
+				<span class="b2_period">+24% this week </span>
+			</div>
+		</div>
+		<div class="block3">
+			<div class="b3_controls">
+				<h3 class="b3_title">
+					Projects
+				</h3>
+				<div class="b3_rw">
+					<a href="#" class="b3_acar">Active</a>
+					<a href="#" class="b3_acar active">Archived</a>
+					<select name="" id="" class="b3_select">
+						<option value="Recent" class="b3_option">Recent</option>
+						<option value="Recent" class="b3_option">Name</option>
+						<option value="Recent" class="b3_option">Last Added</option>
+					</select>
+					<div class="b3_view_wrap">
+						<a href="#" class="b3_view1 b3_view1_active"></a>
+						<a href="#" class="b3_view2 "></a>
+					</div>
+					<button class="b3_add">
+						Add Project
+					</button>
+				</div>
+			</div>
+			<div class="b3_item_wrap">
+				<div class="b3_item">
+					<div class="bt_item_img_wrap">
+						<img src="img/b3_item_img1.jpg" alt="" class="bt_item_img">
+					</div>
+					<div class="b3_item_hover">
+						<a href="#" class="b3_item_share"></a>
+						<a href="#" class="b3_item_more"></a>
+						<div class="b3_item_more_wrap">
+							<a href="#" class="b3_item_more_archive">
+								<span class="b3_item_more_archive_text">
+									Archive
+								</span>
+							</a>
+							<a href="#" class="b3_item_more_delate">
+								<span class="b3_item_more_delate_text">
+									Delete
+								</span>
+							</a>
+						</div>
+						<a href="#" class="be_item_project">View Project</a>
+						<div class="b3_item_people_wrap">
+							<img src="img/b3_persone_avatar1.jpg" alt="" class="b3_persone_avatar">
+							<img src="img/b3_persone_avatar2.jpg" alt="" class="b3_persone_avatar">
+							<img src="img/b3_persone_avatar3.jpg" alt="" class="b3_persone_avatar">
+							<spam class="b3_persone_amount">4</spam>
+						</div>
+					</div>
+					<div class="b3_item_bottom">
+						<h4 class="b3_item_name">Startup Ventures</h4>
+						<span class="b3_item_date">
+							Jan 4, 2017
+						</span>
+					</div>
+				</div>
+				<div class="b3_item">
+					<div class="bt_item_img_wrap">
+						<img src="img/b3_item_img2.jpg" alt="" class="bt_item_img">
+					</div>
+					<div class="b3_item_hover">
+						<a href="#" class="b3_item_share"></a>
+						<a href="#" class="b3_item_more"></a>
+						<div class="b3_item_more_wrap">
+							<a href="#" class="b3_item_more_archive">
+								<span class="b3_item_more_archive_text">
+									Archive
+								</span>
+							</a>
+							<a href="#" class="b3_item_more_delate">
+								<span class="b3_item_more_delate_text">
+									Delete
+								</span>
+							</a>
+						</div>
+						<a href="#" class="be_item_project">View Project</a>
+						<div class="b3_item_people_wrap">
+							<img src="img/b3_persone_avatar1.jpg" alt="" class="b3_persone_avatar">
+							<img src="img/b3_persone_avatar2.jpg" alt="" class="b3_persone_avatar">
+							<img src="img/b3_persone_avatar3.jpg" alt="" class="b3_persone_avatar">
+							<spam class="b3_persone_amount">4</spam>
+						</div>
+					</div>
+					<div class="b3_item_bottom">
+						<h4 class="b3_item_name">Startup Ventures</h4>
+						<span class="b3_item_date">
+							Jan 4, 2017
+						</span>
+					</div>
+				</div>
+				<div class="b3_item">
+					<div class="bt_item_img_wrap">
+						<img src="img/b3_item_img3.jpg" alt="" class="bt_item_img">
+					</div>
+					<div class="b3_item_hover">
+						<a href="#" class="b3_item_share"></a>
+						<a href="#" class="b3_item_more"></a>
+						<div class="b3_item_more_wrap">
+							<a href="#" class="b3_item_more_archive">
+								<span class="b3_item_more_archive_text">
+									Archive
+								</span>
+							</a>
+							<a href="#" class="b3_item_more_delate">
+								<span class="b3_item_more_delate_text">
+									Delete
+								</span>
+							</a>
+						</div>
+						<a href="#" class="be_item_project">View Project</a>
+						<div class="b3_item_people_wrap">
+							<img src="img/b3_persone_avatar1.jpg" alt="" class="b3_persone_avatar">
+							<img src="img/b3_persone_avatar2.jpg" alt="" class="b3_persone_avatar">
+							<img src="img/b3_persone_avatar3.jpg" alt="" class="b3_persone_avatar">
+							<spam class="b3_persone_amount">4</spam>
+						</div>
+					</div>
+					<div class="b3_item_bottom">
+						<h4 class="b3_item_name">Startup Ventures</h4>
+						<span class="b3_item_date">
+							Jan 4, 2017
+						</span>
+					</div>
+				</div>
+				<div class="b3_item">
+					<div class="bt_item_img_wrap">
+						<img src="img/b3_item_img4.jpg" alt="" class="bt_item_img">
+					</div>
+					<div class="b3_item_hover">
+						<a href="#" class="b3_item_share"></a>
+						<a href="#" class="b3_item_more"></a>
+						<div class="b3_item_more_wrap">
+							<a href="#" class="b3_item_more_archive">
+								<span class="b3_item_more_archive_text">
+									Archive
+								</span>
+							</a>
+							<a href="#" class="b3_item_more_delate">
+								<span class="b3_item_more_delate_text">
+									Delete
+								</span>
+							</a>
+						</div>
+						<a href="#" class="be_item_project">View Project</a>
+						<div class="b3_item_people_wrap">
+							<img src="img/b3_persone_avatar1.jpg" alt="" class="b3_persone_avatar">
+							<img src="img/b3_persone_avatar2.jpg" alt="" class="b3_persone_avatar">
+							<img src="img/b3_persone_avatar3.jpg" alt="" class="b3_persone_avatar">
+							<spam class="b3_persone_amount">4</spam>
+						</div>
+					</div>
+					<div class="b3_item_bottom">
+						<h4 class="b3_item_name">Startup Ventures</h4>
+						<span class="b3_item_date">
+							Jan 4, 2017
+						</span>
+					</div>
+				</div>
+				<div class="b3_item">
+					<div class="bt_item_img_wrap">
+						<img src="img/b3_item_img5.jpg" alt="" class="bt_item_img">
+					</div>
+					<div class="b3_item_hover">
+						<a href="#" class="b3_item_share"></a>
+						<a href="#" class="b3_item_more"></a>
+						<div class="b3_item_more_wrap">
+							<a href="#" class="b3_item_more_archive">
+								<span class="b3_item_more_archive_text">
+									Archive
+								</span>
+							</a>
+							<a href="#" class="b3_item_more_delate">
+								<span class="b3_item_more_delate_text">
+									Delete
+								</span>
+							</a>
+						</div>
+						<a href="#" class="be_item_project">View Project</a>
+						<div class="b3_item_people_wrap">
+							<img src="img/b3_persone_avatar1.jpg" alt="" class="b3_persone_avatar">
+							<img src="img/b3_persone_avatar2.jpg" alt="" class="b3_persone_avatar">
+							<img src="img/b3_persone_avatar3.jpg" alt="" class="b3_persone_avatar">
+							<spam class="b3_persone_amount">4</spam>
+						</div>
+					</div>
+					<div class="b3_item_bottom">
+						<h4 class="b3_item_name">Startup Ventures</h4>
+						<span class="b3_item_date">
+							Jan 4, 2017
+						</span>
+					</div>
+				</div>
+				<div class="b3_item">
+					<div class="bt_item_img_wrap">
+						<img src="img/b3_item_img6.jpg" alt="" class="bt_item_img">
+					</div>
+					<div class="b3_item_hover">
+						<a href="#" class="b3_item_share"></a>
+						<a href="#" class="b3_item_more"></a>
+						<div class="b3_item_more_wrap">
+							<a href="#" class="b3_item_more_archive">
+								<span class="b3_item_more_archive_text">
+									Archive
+								</span>
+							</a>
+							<a href="#" class="b3_item_more_delate">
+								<span class="b3_item_more_delate_text">
+									Delete
+								</span>
+							</a>
+						</div>
+						<a href="#" class="be_item_project">View Project</a>
+						<div class="b3_item_people_wrap">
+							<img src="img/b3_persone_avatar1.jpg" alt="" class="b3_persone_avatar">
+							<img src="img/b3_persone_avatar2.jpg" alt="" class="b3_persone_avatar">
+							<img src="img/b3_persone_avatar3.jpg" alt="" class="b3_persone_avatar">
+							<spam class="b3_persone_amount">4</spam>
+						</div>
+					</div>
+					<div class="b3_item_bottom">
+						<h4 class="b3_item_name">Startup Ventures</h4>
+						<span class="b3_item_date">
+							Jan 4, 2017
+						</span>
+					</div>
+				</div>
+			</div>
+		</div> <!-- block3 end -->
+		<div class="wrap_for_some_blocks">
+		<div class="block4">
+			<div class="b4_contlors">
+				<h4 class="b4_contlors_title">
+					To Do Lists
+				</h4>
+				<select name="" id="" class="b4_contlors_select">
+					<option value="" class="b4_contlors_option">
+						All Projects
+					</option>
+					<option value="" class="b4_contlors_option">
+						All Projects 2
+					</option>
+					<option value="" class="b4_contlors_option">
+						All Projects 3
+					</option>
+				</select>
+				<a href="#" class="b4_contlors_search"></a>
+			</div>
+			<div class="b4_row">
+				<input type="checkbox" class="b4_row_checkbox" id="b4_row_checkbox1">
+				<label for="b4_row_checkbox1" class="b4_row_label"></label>
+
+				<p class="b4_row_description">Recreate the form of new user</p>
+				<p class="b4_row_person">
+					Sean Paul
+				</p>
+				<p class="b4_row_status b4_row_status_red">
+					Overdue
+				</p>
+			</div>
+			<div class="b4_row">
+				<input type="checkbox" class="b4_row_checkbox" id="b4_row_checkbox2">
+				<label for="b4_row_checkbox2" class="b4_row_label"></label>
+
+				<p class="b4_row_description">Share unlimited tasks with anyone, colleag</p>
+				<p class="b4_row_person">
+					Bobby Porter
+				</p>
+				<p class="b4_row_status b4_row_status_green">
+					Today
+				</p>
+			</div>
+			<div class="b4_row">
+				<input type="checkbox" checked class="b4_row_checkbox" id="b4_row_checkbox3">
+				<label for="b4_row_checkbox3" class="b4_row_label"></label>
+
+				<p class="b4_row_description">
+					With apps and extensions for 10+ platforms
+				</p>
+				<p class="b4_row_person">
+					Annbella F.
+				</p>
+				<p class="b4_row_status">
+					Apr 8
+				</p>
+			</div>
+			<div class="b4_row">
+				<input type="checkbox" checked class="b4_row_checkbox" id="b4_row_checkbox4">
+				<label for="b4_row_checkbox4" class="b4_row_label"></label>
+
+				<p class="b4_row_description">
+					Achieve more by breaking big tasks into s
+				</p>
+				<p class="b4_row_person">
+					Sean Paul
+				</p>
+				<p class="b4_row_status">
+					Apr 8
+				</p>
+			</div>
+			<div class="b4_row">
+				<input type="checkbox" class="b4_row_checkbox" id="b4_row_checkbox5">
+				<label for="b4_row_checkbox5" class="b4_row_label"></label>
+
+				<p class="b4_row_description">
+					Manage complexity by breaking big projec
+				</p>
+				<p class="b4_row_person">
+					Bobby Porter
+				</p>
+				<p class="b4_row_status">
+					Apr 10
+				</p>
+			</div>
+			<div class="b4_row">
+				<input type="checkbox" class="b4_row_checkbox" id="b4_row_checkbox6">
+				<label for="b4_row_checkbox6" class="b4_row_label"></label>
+
+				<p class="b4_row_description">
+					Focus on what's important using Todoist’s…
+				</p>
+				<p class="b4_row_person">
+					Sean Paul
+				</p>
+				<p class="b4_row_status">
+					Apr 12
+				</p>
+			</div>
+			<div class="b4_row">
+				<input type="checkbox" class="b4_row_checkbox" id="b4_row_checkbox7">
+				<label for="b4_row_checkbox7" class="b4_row_label"></label>
+
+				<p class="b4_row_description">
+				Attempt the 3rd experiment
+				</p>
+				<p class="b4_row_person">
+					Bobby Porter
+				</p>
+				<p class="b4_row_status">
+					Apr 14
+				</p>
+			</div>
+			<div class="b4_row">
+				<input type="checkbox" class="b4_row_checkbox" id="b4_row_checkbox8">
+				<label for="b4_row_checkbox8" class="b4_row_label"></label>
+
+				<p class="b4_row_description">
+				Create sneak peek for early adopter
+				</p>
+				<p class="b4_row_person">
+					Sean Paul
+				</p>
+				<p class="b4_row_status">
+					Apr 15
+				</p>
+			</div>
+			<div class="b4_row">
+				<input type="checkbox" class="b4_row_checkbox" id="b4_row_checkbox9">
+				<label for="b4_row_checkbox9" class="b4_row_label"></label>
+
+				<p class="b4_row_description">
+				Spread test result distribution
+				</p>
+				<p class="b4_row_person">
+					Sean Paul
+				</p>
+				<p class="b4_row_status">
+					Apr 15
+				</p>
+			</div>
+			<div class="b4_row">
+				<input type="checkbox" class="b4_row_checkbox" id="b4_row_checkbox10">
+				<label for="b4_row_checkbox10" class="b4_row_label"></label>
+
+				<p class="b4_row_description">
+					Set 123 goals of the week
+				</p>
+				<p class="b4_row_person">
+					Bobby Porter
+				</p>
+				<p class="b4_row_status">
+					Apr 20
+				</p>
+			</div>
+
+		</div> <!-- END block 4 -->
+		<div class="block5">
+			<div class="b5_contlors">
+				<h4 class="b5_contlors_title">
+					Recent Activities
+				</h4>
+				<a href="#" class="b5_contlors_when">Yesterday</a>
+				<a href="#" class="b5_contlors_when b5_contlors_when_active">Today</a>
+				<a href="#" class="b5_contlors_when">All Time</a>
+			</div>
+			<!-- START b5_activity_item_wrap -->
+			<div class="b5_activity_item_wrap">
+			<!-- START b5_activity_item -->
+			<div class="b5_activity_item"> 
+				<img src="img/b5_activity_item_avatar1.jpg" alt="" class="b5_activity_item_avatar">
+				<div class="b5_activity_description">
+					<span class="b5_activity_description_name">
+						Andro Swanegier
+					</span>
+					has added a
+					<span class="b5_activity_description_action">
+						To Do List 
+					</span>
+					‘Make new components for customer’
+				</div>
+				<p class="b5_activity_time">
+					3m
+				</p>
+			</div>
+			<!-- END b5_activity_item -->
+			<!-- START b5_activity_item -->
+			<div class="b5_activity_item"> 
+				<img src="img/b5_activity_item_avatar1.jpg" alt="" class="b5_activity_item_avatar">
+				<div class="b5_activity_description">
+					<span class="b5_activity_description_name">
+						Andro Swanegier
+					</span>
+					has added a
+					<span class="b5_activity_description_action">
+						To Do List 
+					</span>
+					‘Make new components for customer’
+				</div>
+				<p class="b5_activity_time">
+					3m
+				</p>
+			</div>
+			<!-- END b5_activity_item -->
+			<!-- START b5_activity_item -->
+			<div class="b5_activity_item"> 
+				<img src="img/b5_activity_item_avatar1.jpg" alt="" class="b5_activity_item_avatar">
+				<div class="b5_activity_description">
+					<span class="b5_activity_description_name">
+						Andro Swanegier
+					</span>
+					has added a
+					<span class="b5_activity_description_action">
+						To Do List 
+					</span>
+					‘Make new components for customer’
+				</div>
+				<p class="b5_activity_time">
+					3m
+				</p>
+			</div>
+			<!-- END b5_activity_item -->
+			<!-- START b5_activity_item -->
+			<div class="b5_activity_item"> 
+				<img src="img/b5_activity_item_avatar1.jpg" alt="" class="b5_activity_item_avatar">
+				<div class="b5_activity_description">
+					<span class="b5_activity_description_name">
+						Andro Swanegier
+					</span>
+					has added a
+					<span class="b5_activity_description_action">
+						To Do List 
+					</span>
+					‘Make new components for customer’
+				</div>
+				<p class="b5_activity_time">
+					3m
+				</p>
+			</div>
+			<!-- END b5_activity_item -->
+			<!-- START b5_activity_item -->
+			<div class="b5_activity_item"> 
+				<img src="img/b5_activity_item_avatar1.jpg" alt="" class="b5_activity_item_avatar">
+				<div class="b5_activity_description">
+					<span class="b5_activity_description_name">
+						Andro Swanegier
+					</span>
+					has added a
+					<span class="b5_activity_description_action">
+						To Do List 
+					</span>
+					‘Make new components for customer’
+				</div>
+				<p class="b5_activity_time">
+					3m
+				</p>
+			</div>
+			<!-- END b5_activity_item -->
+			<!-- START b5_activity_item -->
+			<div class="b5_activity_item"> 
+				<img src="img/b5_activity_item_avatar1.jpg" alt="" class="b5_activity_item_avatar">
+				<div class="b5_activity_description">
+					<span class="b5_activity_description_name">
+						Andro Swanegier
+					</span>
+					has added a
+					<span class="b5_activity_description_action">
+						To Do List 
+					</span>
+					‘Make new components for customer’
+				</div>
+				<p class="b5_activity_time">
+					3m
+				</p>
+			</div>
+			<!-- END b5_activity_item -->
+			<!-- START b5_activity_item -->
+			<div class="b5_activity_item"> 
+				<img src="img/b5_activity_item_avatar1.jpg" alt="" class="b5_activity_item_avatar">
+				<div class="b5_activity_description">
+					<span class="b5_activity_description_name">
+						Andro Swanegier
+					</span>
+					has added a
+					<span class="b5_activity_description_action">
+						To Do List 
+					</span>
+					‘Make new components for customer’
+				</div>
+				<p class="b5_activity_time">
+					3m
+				</p>
+			</div>
+			<!-- END b5_activity_item -->
+			<!-- START b5_activity_item -->
+			<div class="b5_activity_item"> 
+				<img src="img/b5_activity_item_avatar1.jpg" alt="" class="b5_activity_item_avatar">
+				<div class="b5_activity_description">
+					<span class="b5_activity_description_name">
+						Andro Swanegier
+					</span>
+					has added a
+					<span class="b5_activity_description_action">
+						To Do List 
+					</span>
+					‘Make new components for customer’
+				</div>
+				<p class="b5_activity_time">
+					3m
+				</p>
+			</div>
+			<!-- END b5_activity_item -->
+			<!-- START b5_activity_item -->
+			<div class="b5_activity_item"> 
+				<img src="img/b5_activity_item_avatar1.jpg" alt="" class="b5_activity_item_avatar">
+				<div class="b5_activity_description">
+					<span class="b5_activity_description_name">
+						Andro Swanegier
+					</span>
+					has added a
+					<span class="b5_activity_description_action">
+						To Do List 
+					</span>
+					‘Make new components for customer’
+				</div>
+				<p class="b5_activity_time">
+					3m
+				</p>
+			</div><!-- END b5_activity_item -->
+			</div><!-- END b5_activity_item_wrap -->
+		</div>
+		</div> <!-- END wrap_for_some_blocks -->
+
+
+	</div> <!-- END WRAP -->
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+	<script src="libs/jquery/jquery-1.11.1.min.js"></script>
+	<script src="libs/jquery.maskedinput.min.js"></script>
+	<script src="libs/jquery.placeholder.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.js"></script>
+	<script src="mlibs/jquery.selectric.min.js"></script>
+	<script src="js/common.js"></script>
+
+
+	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>
